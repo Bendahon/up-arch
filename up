@@ -1,0 +1,26 @@
+#!/bin/bash
+# update tool for pacman based systems (V1.0)
+# Move to /usr/local/bin/up and then just run it
+
+update() 
+{
+echo "-------------------------------"
+echo "- Starting full system update -"
+echo "-------------------------------"
+sudo pacman -Syu
+}
+
+leave() 
+{
+echo "--------------------"
+echo "- Update Complete! -"
+echo "--------------------"
+exit
+}
+
+echo "------------------------------------------"
+echo "- Manjaro/Arch Update Tool (Version 1.0) -"
+echo "------------------------------------------"
+
+update
+leave
